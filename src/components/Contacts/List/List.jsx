@@ -22,7 +22,6 @@ export const List = () => {
     dispatch(deleteContacts(id));
   };
   const items = filteredContacts();
-  console.log(items);
   const elements = items.map(item => {
     return (
       <li key={item.id}>
